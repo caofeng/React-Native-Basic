@@ -1,0 +1,3 @@
+rootProject.name = 'zyxrTabBarIOS'
+
+include ':app'

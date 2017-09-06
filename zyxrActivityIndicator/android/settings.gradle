@@ -1,0 +1,3 @@
+rootProject.name = 'zyxrActivityIndicator'
+
+include ':app'

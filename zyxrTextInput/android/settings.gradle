@@ -1,0 +1,3 @@
+rootProject.name = 'zyxrTextInput'
+
+include ':app'
