@@ -127,19 +127,15 @@ export default class ZYXRLogin extends Component {
             <View
               style={{
                 backgroundColor: "rgba(255,255 ,255 ,0 )",
-                flex: 1,
                 flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center"
+                height: 50,
+                width: width - 40,
+                alignItems: "center",
+                position: "absolute"
               }}
             >
               <Text style={styles.lJloginText}>立即登陆</Text>
-              <ActivityIndicator
-                size="small"
-                color="white"
-                animating={this.state.isShowActivity}
-                hidesWhenStopped={true}
-              />
+              {this.showActivityIfNeed()}
             </View>
           </TouchableHighlight>
 
@@ -148,7 +144,6 @@ export default class ZYXRLogin extends Component {
               style={[styles.protocolText, { color: "blue" }]}
               suppressHighlighting={true}
               onPress={() => {
-                //this.responseEvent("中业兴融用户协议");
                 this.setState({ isShowActivity: false });
               }}
             >
@@ -156,7 +151,6 @@ export default class ZYXRLogin extends Component {
             </Text>
           </Text>
         </View>
-
         <Text style={{ fontSize: 15, color: "#000000", marginBottom: 30 }}>
           中业兴融已正式接入华瑞银行存管
         </Text>
@@ -225,6 +219,21 @@ export default class ZYXRLogin extends Component {
       return null;
     }
   }
+
+  showActivityIfNeed() {
+    if (this.state.isShowActivity) {
+      return (
+        <ActivityIndicator
+          size="small"
+          color="white"
+          animating={this.state.isShowActivity}
+          hidesWhenStopped={true}
+        />
+      );
+    } else {
+      return null;
+    }
+  }
 }
 
 const styles = StyleSheet.create({
@@ -257,20 +266,17 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "#CCCCCC"
   },
-
   forgetPassWordView: {
     marginTop: 10,
     backgroundColor: "#FFFFFF",
     width: width,
     alignItems: "flex-end"
   },
-
   forgetPassWord: {
     color: "#AAAAAA",
     fontSize: 18,
     marginRight: 20
   },
-
   loginBut: {
     justifyContent: "center",
     alignItems: "center",
@@ -280,7 +286,8 @@ const styles = StyleSheet.create({
   },
   lJloginText: {
     color: "#FFFFFF",
-    fontSize: 20
+    fontSize: 20,
+    marginLeft: (width - 120) / 2
   },
   protocolText: {
     marginTop: 30,
