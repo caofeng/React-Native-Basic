@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "ZYXRLogin.app"
-               BlueprintName = "ZYXRLogin"
-               ReferencedContainer = "container:ZYXRLogin.xcodeproj">
+               BuildableName = "syntax.app"
+               BlueprintName = "syntax"
+               ReferencedContainer = "container:syntax.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ZYXRLoginTests.xctest"
-               BlueprintName = "ZYXRLoginTests"
-               ReferencedContainer = "container:ZYXRLogin.xcodeproj">
+               BuildableName = "syntaxTests.xctest"
+               BlueprintName = "syntaxTests"
+               ReferencedContainer = "container:syntax.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -62,9 +62,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ZYXRLoginTests.xctest"
-               BlueprintName = "ZYXRLoginTests"
-               ReferencedContainer = "container:ZYXRLogin.xcodeproj">
+               BuildableName = "syntaxTests.xctest"
+               BlueprintName = "syntaxTests"
+               ReferencedContainer = "container:syntax.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ZYXRLogin.app"
-            BlueprintName = "ZYXRLogin"
-            ReferencedContainer = "container:ZYXRLogin.xcodeproj">
+            BuildableName = "syntax.app"
+            BlueprintName = "syntax"
+            ReferencedContainer = "container:syntax.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -96,11 +96,18 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ZYXRLogin.app"
-            BlueprintName = "ZYXRLogin"
-            ReferencedContainer = "container:ZYXRLogin.xcodeproj">
+            BuildableName = "syntax.app"
+            BlueprintName = "syntax"
+            ReferencedContainer = "container:syntax.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "OS_ACTIVITY_MODE"
+            value = "disable"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -115,9 +122,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ZYXRLogin.app"
-            BlueprintName = "ZYXRLogin"
-            ReferencedContainer = "container:ZYXRLogin.xcodeproj">
+            BuildableName = "syntax.app"
+            BlueprintName = "syntax"
+            ReferencedContainer = "container:syntax.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
